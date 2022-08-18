@@ -1,0 +1,45 @@
+.App {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	grid-template-rows: 10% 120vh 10%;
+	grid-template-areas:
+		"header header header"
+		"sidebar main sidebar"
+		"bottom bottom bottom";
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.bottom {
+  background-color: #527dd2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.siderbar {
+  background-color: #527dd2;
+}
+
+.header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.main {
+  background-color: #52d294;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
