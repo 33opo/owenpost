@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/owenpost/static/css/main.6ac835cb.css",
-    "main.js": "/owenpost/static/js/main.c6c904a6.js",
+    "main.js": "/owenpost/static/js/main.3eb2ad96.js",
     "index.html": "/owenpost/index.html",
     "main.6ac835cb.css.map": "/owenpost/static/css/main.6ac835cb.css.map",
-    "main.c6c904a6.js.map": "/owenpost/static/js/main.c6c904a6.js.map"
+    "main.3eb2ad96.js.map": "/owenpost/static/js/main.3eb2ad96.js.map"
   },
   "entrypoints": [
     "static/css/main.6ac835cb.css",
-    "static/js/main.c6c904a6.js"
+    "static/js/main.3eb2ad96.js"
   ]
 }
