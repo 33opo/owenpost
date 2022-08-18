@@ -10,7 +10,7 @@ const project = {
         media: String
       }
   const [projectList, setProjectList] = React.useState<project>([]);
-
+  
   return (
     <div>
         Projects
