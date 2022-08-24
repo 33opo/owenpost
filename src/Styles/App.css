@@ -1,110 +1,82 @@
-/*
+
 .App {
-	height: 100vh;
 	display: grid;
-	grid-template-columns: 10% 80% 10%;
-	grid-template-rows: 100% 120vh 10%;
+  margin: 0;
+	grid-template-columns: 1% 98% 1%;
+	grid-template-rows: 1% 90vh 1%;
 	grid-template-areas:
 		"header header header"
-		"sidebar main sidebar"
+		"sidebar back sidebar"
 		"bottom bottom bottom";
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-*/
+
+area {
+  outline: 5px solid rgb(147, 120, 225);
+  position: relative;
+}
+
+
+.popup {
+  padding: 20px;
+  background-color: rgba(100, 100, 100, 0.9);
+  color: white;
+  font-weight: 100;
+  font-size: 14px;
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.popup:target {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup > .close {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: black;
+  padding: 4px 10px;
+}
 
 .bottom {
-  background-color: #527dd2;
+  background-color: #5471ac;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.siderbar {
-  background-color: #527dd2;
+.sidebar {
+  background-color: #0f3d978e;
 }
 
 .header {
-  background-color: #282c34;
-  background-image: url("Desk.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  background-color: #81a5ef;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.main {
-  background-color: #52d294;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.mainPicture {
-  background-color: #282c34;
-  background-image: url("Desk.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size:cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  width: 100%;
-  height: auto;
-}
-
-.BackPic {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  background: url("sizedDesk.jpg") no-repeat center fixed;
-  background-size: cover;
-  width: 100%;
-  height: 3125px;
-  overflow: hidden;
-}
-
-.Coffee {
-  background-color: #282c34;
-  border-style: solid;
-  position: absolute;
-}
-
-.Coffee:hover {
-  filter: brightness(150%);
 }
 
 img {
-  width: 7600px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top:  0%;
 }
 
 .back {
-background-color: #282c34;
-display: flex;
-justify-content: center;
-width: 100%;
-height: 100%;
-margin: 0;
-padding: 0;
-border: 0;
-outline: 0;
-vertical-align: baseline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Name {
