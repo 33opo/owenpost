@@ -15,7 +15,6 @@
 
 area {
   outline: 5px solid rgb(147, 120, 225);
-  position: relative;
 }
 
 
@@ -87,8 +86,8 @@ img {
   justify-content: center;
   font-size: calc(50px + 2vmin);
   color: white;
-  top: 1500px;
-  left: 4000px;
+  left: 40%;
+  top:  40%;
 }
 
 .Text {
@@ -97,9 +96,38 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(50px + 2vmin);
+  font-size: calc(30px + 2vmin);
   color: white;
-  top: 1700px;
-  left: 2300px;
-  right: 1000px;
+  left: 40%;
+  top:  50%;
+  right: 20%;
+}
+
+/* NOTABLE SECTION
+*/
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 17%;
+  top: 34%;
+  height: 30%;
+  width: 26%;
+  position: absolute;
+}
+
+.Notable {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(30px + 2vmin);
+  color: white;
+  left: 45%;
+  top:  30%;
+  right: 20%;
 }
