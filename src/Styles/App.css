@@ -13,10 +13,9 @@
   color: white;
 }
 
-area {
+area:hover {
   outline: 5px solid rgb(147, 120, 225);
 }
-
 
 .popup {
   padding: 20px;
