@@ -125,9 +125,58 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(30px + 2vmin);
+  font-family: 'Secular One'; 
+  font-size: calc(15px + 2vmin);
   color: white;
   left: 45%;
+  top:  38%;
+  right: 20%;
+}
+
+.Notable-Name {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family:'Secular One';
+  font-size: calc(30px + 2vmin);
+  text-shadow: 4px 4px 5px rgb(255, 255, 255);
+  letter-spacing: 10px;
+  color:#4c4e50;
+  left: 42%;
   top:  30%;
   right: 20%;
+}
+
+.Notable-Icon1 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: calc(30px + 2vmin);
+  left: 55%;
+  top:  62%;
+}
+
+.Notable-Icon1:hover {
+  cursor: pointer;
+  color:#4c4e50;
+}
+
+.Notable-Icon2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: calc(30px + 2vmin);
+  left: 66%;
+  top:  62%;
+}
+
+.Notable-Icon2:hover {
+  cursor: pointer;
+  color:#4c4e50;
 }

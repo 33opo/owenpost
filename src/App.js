@@ -1,5 +1,8 @@
 import './Styles/App.css';
 import React from "react";
+import { faCoffee, faBookOpen } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   window.onload = function () {
@@ -8,9 +11,11 @@ function App() {
                 areas = map.getElementsByTagName('area'),
                 len = areas.length,
                 coords = [],
-                previousWidth = 1890;
+                previousWidth = 1888;
                 //1890 for smaller screen
+                //1920 - 30 = 2048 - 160
                 //
+                //2048 large 1920 small = 128
             for (n = 0; n < len; n++) {
                 coords[n] = areas[n].coords.split(',');
             }
@@ -36,6 +41,8 @@ function App() {
 const [mouse, setMouse] = React.useState(false);
 const [coffee, setCoffee] = React.useState(false);
 const [start, setStart] = React.useState(true);
+
+console.log(window.innerWidth);
 
 const mouseTrue = () => {
   setMouse(true);
@@ -79,24 +86,33 @@ const coffeeTrue = () => {
         <div className="Text">
           Welcome to my desk! Feel free to look around as its a little messy around here.
         </div>
+        
         </div>
       )}
 
       {coffee && (
         <div className="Text">
           Coffee
+          <FontAwesomeIcon icon={faCoffee} />
         </div>
       )}
 
       {mouse && (
         <div>
-        <div className="Notable">
+        <div className="Notable-Name">
           Notable
-          <div> 
-          This application that allows a user to upload a youtube video or pdf and take notes.
-          Users can also make presentations and use many more features as shown in the video!
-          </div>
         </div>
+        <div className="Notable"> 
+          This application allows a user to upload a youtube video or pdf and take notes.
+          Users can also make presentations and use many more features as shown in the video!
+        </div>
+        <div className="Notable-Icon1">
+          <FontAwesomeIcon icon={faBookOpen} onClick={() => window.open('https://stormy-plateau-24106.herokuapp.com/presentations', '_blank')}/>
+        </div>
+        <div className="Notable-Icon2">
+          <FontAwesomeIcon icon={faGithub} onClick={() => window.open('https://github.com/33opo/notable', '_blank')}/>
+        </div>
+        
         <div className="video-responsive">
     <iframe
       width="853"
