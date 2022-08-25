@@ -1,0 +1,86 @@
+.Description {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Secular One'; 
+    font-size: calc(10px + 2vmin);
+    color: white;
+    left: 50%;
+    top:  38%;
+    right: 18%;
+  }
+
+.Name {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:'Secular One';
+    font-size: calc(30px + 2vmin);
+    text-shadow: 4px 4px 5px rgb(255, 255, 255);
+    letter-spacing: 10px;
+    color:rgb(62,62,62);
+    left: 42%;
+    top:  30%;
+    right: 20%;
+  }
+
+.Picture {
+    position: absolute;
+    outline: 5px solid rgb(62,62,62);
+    left: 30%;
+    top:  30%;
+    width: 17%;
+     height: auto;
+  }
+  
+  .Icon1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: calc(100px + 2vmin);
+    left: 34%;
+    top:  45%;
+  }
+  
+  .Icon1:hover {
+    cursor: pointer;
+    color:rgb(204,204,204);
+  }
+  
+  .Icon2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: calc(100px + 2vmin);
+    left: 50%;
+    top:  45%;
+  }
+  
+  .Icon2:hover {
+    cursor: pointer;
+    color:rgb(204,204,204);
+  }
+
+.Icon3 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: calc(100px + 2vmin);
+    left: 66%;
+    top:  45%;
+  }
+  
+.Icon3:hover {
+    cursor: pointer;
+    color:rgb(204,204,204);
+  }

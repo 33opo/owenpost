@@ -1,29 +1,36 @@
-import "../Styles/App.css";
+import "../Styles/Me.css";
 import React from "react";
-import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   return (
     <div>
-      <div className="Notable-Name">Owen Post</div>
-      <div className="Notable-Icon1">
+      <div className="Icon1">
         <FontAwesomeIcon
-          icon={faBookOpen}
+          icon={faLinkedin}
           onClick={() =>
             window.open(
-              "https://cmpt345project.herokuapp.com/",
+              "https://www.linkedin.com/in/owenpost/",
               "_blank"
             )
           }
         />
       </div>
-      <div className="Notable-Icon2">
+      <div className="Icon2">
         <FontAwesomeIcon
           icon={faGithub}
           onClick={() =>
-            window.open("https://github.com/jshggagnier/CMPT345Project", "_blank")
+            window.open("https://github.com/33opo", "_blank")
+          }
+        />
+      </div>
+      <div className="Icon3">
+        <FontAwesomeIcon
+          icon={faEnvelope}
+          onClick={() =>
+            window.open("", "_blank")
           }
         />
       </div>

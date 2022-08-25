@@ -1,35 +1,16 @@
-import "../Styles/App.css";
+import "../Styles/Me.css";
 import React from "react";
-import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   return (
     <div>
-      <div className="Notable-Name">Owen Post</div>
-      <div className="Notable">
-        Hello! This is me!
+      <div className="Name">Owen Post</div>
+      <div className="Description">
+        Hello and welcome! I am a 2nd year software systems student at Simon Fraser University.
+        Some of my more outdoorsy hobbies include Soccer, Hockey, and Hiking. But I also enjoy
+        staying home and watching some good movies, anime, or reading!
       </div>
-      <div className="Notable-Icon1">
-        <FontAwesomeIcon
-          icon={faBookOpen}
-          onClick={() =>
-            window.open(
-              "https://cmpt345project.herokuapp.com/",
-              "_blank"
-            )
-          }
-        />
-      </div>
-      <div className="Notable-Icon2">
-        <FontAwesomeIcon
-          icon={faGithub}
-          onClick={() =>
-            window.open("https://github.com/jshggagnier/CMPT345Project", "_blank")
-          }
-        />
-      </div>
+      <img className="Picture" src={require("../Styles/Me2.jpg")} alt="Me"/>
     </div>
   );
 }
