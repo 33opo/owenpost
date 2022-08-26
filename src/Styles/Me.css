@@ -84,3 +84,48 @@
     cursor: pointer;
     color:rgb(204,204,204);
   }
+/*
+WHERE IM AT RIGHT NOW
+*/
+.Title {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family:'Secular One';
+  font-size: calc(30px + 2vmin);
+  text-shadow: 4px 4px 5px rgb(255, 255, 255);
+  letter-spacing: 10px;
+  color:rgb(62,62,62);
+  left: 30%;
+  top:  30%;
+}
+
+.Time {
+  position: absolute;
+  font-family: 'Secular One'; 
+  font-size: calc(10px + 2vmin);
+  color: white;
+  left: 30%;
+  top:  38%;
+}
+
+.Time-Desc {
+  position: absolute;
+  font-family: 'Secular One'; 
+  font-size: calc(10px + 2vmin);
+  color: white;
+  left: 53.3%;
+  top:  38%;
+}
+
+.After-Desc {
+  position: absolute;
+  font-family: 'Secular One'; 
+  font-size: calc(10px + 2vmin);
+  color: white;
+  left: 30%;
+  top:  45%;
+  right: 30%;
+}

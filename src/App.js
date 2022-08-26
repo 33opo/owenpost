@@ -4,6 +4,8 @@ import Notable from "./Components/Notable";
 import Database from "./Components/Database";
 import AboutMe from "./Components/AboutMe";
 import WhereToFindMe from "./Components/WhereToFindMe";
+import WorkExperience from "./Components/WorkExperience";
+import WhereImAt from "./Components/WhereImAt";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -50,63 +52,21 @@ function App() {
   const [coffee, setCoffee] = React.useState(false);
   const [trackpad, setTrackpad] = React.useState(false);
   const [glasses, setGlasses] = React.useState(false);
+  const [work, setWork] = React.useState(false);
+  const [watch, setWatch] = React.useState(false);
   const [magnifyingGlass, setMagnifyingGlass] = React.useState(false);
   const [start, setStart] = React.useState(true);
 
   //console.log(window.innerWidth);
-
-  const mouseTrue = () => {
-    setMouse(true);
+  const allFalse = () => {
+    setMouse(false);
     setCoffee(false);
     setStart(false);
     setTrackpad(false);
     setGlasses(false);
     setMagnifyingGlass(false);
-  };
-
-  const coffeeTrue = () => {
-    setCoffee(true);
-    setMouse(false);
-    setStart(false);
-    setTrackpad(false);
-    setGlasses(false);
-    setMagnifyingGlass(false);
-  };
-
-  const trackpadTrue = () => {
-    setTrackpad(true);
-    setCoffee(false);
-    setMouse(false);
-    setStart(false);
-    setGlasses(false);
-    setMagnifyingGlass(false);
-  };
-
-  const glassesTrue = () => {
-    setGlasses(true);
-    setTrackpad(false);
-    setCoffee(false);
-    setMouse(false);
-    setStart(false);
-    setMagnifyingGlass(false);
-  };
-
-  const magnifyingGlassTrue = () => {
-    setMagnifyingGlass(true);
-    setGlasses(false);
-    setTrackpad(false);
-    setCoffee(false);
-    setMouse(false);
-    setStart(false);
-  };
-
-  const resumeTrue = () => {
-    setMagnifyingGlass(false);
-    setGlasses(false);
-    setTrackpad(false);
-    setCoffee(false);
-    setMouse(false);
-    setStart(true);
+    setWork(false);
+    setWatch(false);
   };
 
   return (
@@ -120,7 +80,10 @@ function App() {
       <map id="map_ID" name="map">
         <area
           alt="mouse"
-          onClick={() => mouseTrue()}
+          onClick={() => {
+            allFalse();
+            setMouse(true);
+          }}
           title="Notable"
           href="#mouse"
           coords="1016,50,1041,53,1063,58,1083,73,1083,96,1080,113,1075,140,1070,163,1061,183,1048,195,1031,198,1015,200,991,196,969,191,956,178,953,156,961,128,968,98,976,66,993,53"
@@ -128,7 +91,10 @@ function App() {
         />
         <area
           alt="coffee"
-          onClick={() => coffeeTrue()}
+          onClick={() => {
+            allFalse();
+            setCoffee(true);
+          }}
           title="coffee"
           href="#coffee"
           coords="1544,159,1577,164,1604,172,1627,187,1644,202,1656,224,1657,249,1651,274,1641,292,1627,309,1606,319,1584,327,1559,332,1527,331,1504,326,1480,319,1457,304,1437,279,1429,249,1435,219,1450,195,1475,175,1504,162"
@@ -136,7 +102,10 @@ function App() {
         />
         <area
           alt="trackpad"
-          onClick={() => trackpadTrue()}
+          onClick={() => {
+            allFalse();
+            setTrackpad(true);
+          }}
           title="Database"
           href="#trackpad"
           coords="402,153,595,111,634,210,437,252"
@@ -144,7 +113,10 @@ function App() {
         ></area>
         <area
           alt="glasses"
-          onClick={() => glassesTrue()}
+          onClick={() => {
+            allFalse();
+            setGlasses(true);
+          }}
           title="About Me"
           href="#glasses"
           coords="1380,-1,1418,24,1430,34,1444,36,1461,38,1483,48,1507,58,1534,70,1546,89,1536,105,1517,115,1503,121,1501,133,1481,115,1463,105,1442,99,1422,87,1406,62,1390,66,1367,64,1345,54,1321,44,1292,44,1300,30,1305,6,1323,-1"
@@ -152,8 +124,11 @@ function App() {
         ></area>
         <area
           alt="magnifyingGlass"
-          onClick={() => magnifyingGlassTrue()}
-          title="WhereToFindMe"
+          onClick={() => {
+            allFalse();
+            setMagnifyingGlass(true);
+          }}
+          title="Where to Find Me"
           href="#magnifyingGlass"
           coords="341,666,376,685,390,705,396,729,388,756,372,772,351,784,319,790,299,790,280,788,284,798,278,812,207,930,169,918,252,776,226,743,226,705,250,674,295,660"
           shape="poly"
@@ -161,16 +136,38 @@ function App() {
         <area
           alt="resume"
           onClick={() => {
-            resumeTrue();
+            allFalse();
+            setStart(true);
             window.open(
               "https://firebasestorage.googleapis.com/v0/b/resume-693b0.appspot.com/o/OwenPostResume%20(1).pdf?alt=media&token=b9c448c8-18cb-4f79-b436-491555707b80",
               "_blank"
-            )
-            }
-          }
+            );
+          }}
           title="Resume"
           href=""
           coords="1887,808,1874,794,1763,660,1491,785,1627,956,1884,960"
+          shape="poly"
+        ></area>
+        <area
+          alt="work"
+          onClick={() => {
+            allFalse();
+            setWork(true);
+          }}
+          title="Work Experience"
+          href="#workExperience"
+          coords="151,504,1,601,1,851,35,883,230,754,222,721,230,693,244,680,258,670,272,664,291,658,307,658,323,658"
+          shape="poly"
+        ></area>
+        <area
+          alt="watch"
+          onClick={() => {
+            allFalse();
+            setWatch(true);
+          }}
+          title="Where im at Right Now"
+          href="#watch"
+          coords="106,320,67,336,74,346,76,354,76,369,84,391,98,405,108,411,120,419,130,425,138,433,161,427,175,419,165,401,169,387,173,366,163,350,130,342"
           shape="poly"
         ></area>
       </map>
@@ -195,6 +192,8 @@ function App() {
       {trackpad && <Database />}
       {glasses && <AboutMe />}
       {magnifyingGlass && <WhereToFindMe />}
+      {work && <WorkExperience />}
+      {watch && <WhereImAt />}
     </div>
   );
 }
