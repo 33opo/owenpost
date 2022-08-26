@@ -100,6 +100,15 @@ function App() {
     setStart(false);
   };
 
+  const resumeTrue = () => {
+    setMagnifyingGlass(false);
+    setGlasses(false);
+    setTrackpad(false);
+    setCoffee(false);
+    setMouse(false);
+    setStart(true);
+  };
+
   return (
     <div className="back">
       <img
@@ -149,7 +158,21 @@ function App() {
           coords="341,666,376,685,390,705,396,729,388,756,372,772,351,784,319,790,299,790,280,788,284,798,278,812,207,930,169,918,252,776,226,743,226,705,250,674,295,660"
           shape="poly"
         ></area>
-        <area alt="resume" title="Resume" href="#Resume" coords="1887,808,1874,794,1763,660,1491,785,1627,956,1884,960" shape="poly"></area>
+        <area
+          alt="resume"
+          onClick={() => {
+            resumeTrue();
+            window.open(
+              "https://firebasestorage.googleapis.com/v0/b/resume-693b0.appspot.com/o/OwenPostResume%20(1).pdf?alt=media&token=b9c448c8-18cb-4f79-b436-491555707b80",
+              "_blank"
+            )
+            }
+          }
+          title="Resume"
+          href=""
+          coords="1887,808,1874,794,1763,660,1491,785,1627,956,1884,960"
+          shape="poly"
+        ></area>
       </map>
       {start && (
         <div>
