@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/owenpost/static/css/main.3eef078d.css",
-    "main.js": "/owenpost/static/js/main.63991d0e.js",
-    "static/media/sizedDesk.jpg": "/owenpost/static/media/sizedDesk.1b2ba68dec4e54a420d2.jpg",
-    "static/media/Me2.jpg": "/owenpost/static/media/Me2.9cbc71a004b3ed81d156.jpg",
-    "index.html": "/owenpost/index.html",
-    "main.3eef078d.css.map": "/owenpost/static/css/main.3eef078d.css.map",
-    "main.63991d0e.js.map": "/owenpost/static/js/main.63991d0e.js.map"
+    "main.css": "/static/css/main.3eef078d.css",
+    "main.js": "/static/js/main.2d4a23a0.js",
+    "static/media/sizedDesk.jpg": "/static/media/sizedDesk.1b2ba68dec4e54a420d2.jpg",
+    "static/media/Me2.jpg": "/static/media/Me2.9cbc71a004b3ed81d156.jpg",
+    "index.html": "/index.html",
+    "main.3eef078d.css.map": "/static/css/main.3eef078d.css.map",
+    "main.2d4a23a0.js.map": "/static/js/main.2d4a23a0.js.map"
   },
   "entrypoints": [
     "static/css/main.3eef078d.css",
-    "static/js/main.63991d0e.js"
+    "static/js/main.2d4a23a0.js"
   ]
 }
