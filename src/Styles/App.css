@@ -31,9 +31,18 @@ area:hover {
 img {
   width: 100%;
   height: 100%;
-  /*position:absolute;*/
+  /*position:fixed;*/
+  /* outline: 8px solid rgb(147, 120, 225); */
+ /* margin-top: -0.4%;
+  margin-left: -0.8%; */
   left: 0%;
   top:  0%;
+}
+
+div, html, body {
+  overflow: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .back {
@@ -119,9 +128,9 @@ img {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: calc(30px + 2vmin);
-  left: 55%;
-  top:  62%;
+  font-size: calc(70px + 2vmin);
+  left: 40%;
+  top:  68%;
 }
 
 .Notable-Icon1:hover {
@@ -135,9 +144,9 @@ img {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: calc(30px + 2vmin);
-  left: 66%;
-  top:  62%;
+  font-size: calc(70px + 2vmin);
+  left: 55%;
+  top:  68%;
 }
 
 .Notable-Icon2:hover {

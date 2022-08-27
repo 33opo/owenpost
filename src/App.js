@@ -48,6 +48,7 @@ function App() {
     imageMap.resize();
     return;
   };
+
   const [mouse, setMouse] = React.useState(false);
   const [coffee, setCoffee] = React.useState(false);
   const [trackpad, setTrackpad] = React.useState(false);
@@ -110,7 +111,7 @@ function App() {
           href="#trackpad"
           coords="402,153,595,111,634,210,437,252"
           shape="poly"
-        ></area>
+        />
         <area
           alt="glasses"
           onClick={() => {
@@ -121,7 +122,7 @@ function App() {
           href="#glasses"
           coords="1380,-1,1418,24,1430,34,1444,36,1461,38,1483,48,1507,58,1534,70,1546,89,1536,105,1517,115,1503,121,1501,133,1481,115,1463,105,1442,99,1422,87,1406,62,1390,66,1367,64,1345,54,1321,44,1292,44,1300,30,1305,6,1323,-1"
           shape="poly"
-        ></area>
+        />
         <area
           alt="magnifyingGlass"
           onClick={() => {
@@ -132,7 +133,7 @@ function App() {
           href="#magnifyingGlass"
           coords="341,666,376,685,390,705,396,729,388,756,372,772,351,784,319,790,299,790,280,788,284,798,278,812,207,930,169,918,252,776,226,743,226,705,250,674,295,660"
           shape="poly"
-        ></area>
+        />
         <area
           alt="resume"
           onClick={() => {
@@ -147,7 +148,7 @@ function App() {
           href=""
           coords="1887,808,1874,794,1763,660,1491,785,1627,956,1884,960"
           shape="poly"
-        ></area>
+        />
         <area
           alt="work"
           onClick={() => {
@@ -158,7 +159,7 @@ function App() {
           href="#workExperience"
           coords="151,504,1,601,1,851,35,883,230,754,222,721,230,693,244,680,258,670,272,664,291,658,307,658,323,658"
           shape="poly"
-        ></area>
+        />
         <area
           alt="watch"
           onClick={() => {
@@ -169,7 +170,42 @@ function App() {
           href="#watch"
           coords="106,320,67,336,74,346,76,354,76,369,84,391,98,405,108,411,120,419,130,425,138,433,161,427,175,419,165,401,169,387,173,366,163,350,130,342"
           shape="poly"
-        ></area>
+        />
+        <area
+          alt="tablet"
+          title="Tablet"
+          href="#tablet"
+          coords="481,959,518,774,526,760,820,788,828,799,804,959"
+          shape="poly"
+        />
+        <area
+          alt="phone"
+          title="Phone"
+          href="#phone"
+          coords="1887,379,1848,314,1724,355,1832,537,1887,519"
+          shape="poly"
+        />
+        <area
+          alt="pencilTopRight"
+          title="Contact Me"
+          href="#pencil"
+          coords="1889,57,1738,75,1720,81,1741,89,1889,73"
+          shape="poly"
+        />
+        <area
+          alt="pencilBelowTopRight"
+          title="Contact Me"
+          href="#pencil"
+          coords="1887,115,1714,168,1702,178,1722,182,1889,133"
+          shape="poly"
+        />
+        <area
+          alt="pencilBottomLeft"
+          title="Contact Me"
+          href="#pencil"
+          coords="3,503,185,526,203,536,185,542,-1,518"
+          shape="poly"
+        />
       </map>
       {start && (
         <div>
