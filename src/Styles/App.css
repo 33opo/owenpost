@@ -1,6 +1,10 @@
-
+/*
 area:hover {
   outline: 5px solid rgb(147, 120, 225);
+}
+*/
+area {
+  cursor: pointer;
 }
 
 img {
@@ -15,12 +19,6 @@ div, html, body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   margin:0;
-}
-
-back {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .Name {
@@ -130,9 +128,28 @@ back {
   position: absolute;
   font-family: 'Secular One'; 
   font-size: calc(10px + 2vmin);
-  color: white;
-  background-color: #4c4e50;
-  left: 1%;
-  top:  66%;
+  color: rgb(62,62,62);
+  background-color: rgb(204,204,204);
   pointer-events: none;
+  padding:10px;
+  border-radius:10px;
+  box-shadow:0 0 4px 1px rgb(62,62,62);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.4s linear;
+}
+
+.hide {
+  position: absolute;
+  font-family: 'Secular One'; 
+  font-size: calc(10px + 2vmin);
+  color: rgb(62,62,62);
+  background-color: rgb(204,204,204);
+  pointer-events: none;
+  padding:10px;
+  border-radius:10px;
+  box-shadow:0 0 4px 1px rgb(62,62,62);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.4s, opacity 0.4s linear;
 }
