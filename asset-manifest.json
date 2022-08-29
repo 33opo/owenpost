@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/owenpost/static/css/main.fa783eb6.css",
-    "main.js": "/owenpost/static/js/main.9a969515.js",
+    "main.css": "/owenpost/static/css/main.b147d262.css",
+    "main.js": "/owenpost/static/js/main.07f136f3.js",
     "static/media/sizedDesk.jpg": "/owenpost/static/media/sizedDesk.1b2ba68dec4e54a420d2.jpg",
     "static/media/Me2.jpg": "/owenpost/static/media/Me2.9cbc71a004b3ed81d156.jpg",
     "index.html": "/owenpost/index.html",
-    "main.fa783eb6.css.map": "/owenpost/static/css/main.fa783eb6.css.map",
-    "main.9a969515.js.map": "/owenpost/static/js/main.9a969515.js.map"
+    "main.b147d262.css.map": "/owenpost/static/css/main.b147d262.css.map",
+    "main.07f136f3.js.map": "/owenpost/static/js/main.07f136f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa783eb6.css",
-    "static/js/main.9a969515.js"
+    "static/css/main.b147d262.css",
+    "static/js/main.07f136f3.js"
   ]
 }
