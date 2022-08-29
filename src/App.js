@@ -1,4 +1,5 @@
 import "./Styles/App.css";
+import "./Styles/Me.css";
 import React from "react";
 import Notable from "./Components/Notable";
 import Database from "./Components/Database";
@@ -7,6 +8,7 @@ import WhereToFindMe from "./Components/WhereToFindMe";
 import WorkExperience from "./Components/WorkExperience";
 import WhereImAt from "./Components/WhereImAt";
 import Interests from "./Components/Interests";
+import ContactMe from "./Components/ContactMe";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -57,6 +59,7 @@ function App() {
   const [work, setWork] = React.useState(false);
   const [watch, setWatch] = React.useState(false);
   const [earbuds, setEarbuds] = React.useState(false);
+  const [pencil, setPencil] = React.useState(false);
   const [magnifyingGlass, setMagnifyingGlass] = React.useState(false);
   const [start, setStart] = React.useState(true);
 
@@ -71,7 +74,10 @@ function App() {
     setWork(false);
     setWatch(false);
     setEarbuds(false);
+    setPencil(false);
   };
+
+  const [workDescription, setWorkDescription] = React.useState(false);
 
   return (
     <div className="back">
@@ -153,17 +159,6 @@ function App() {
           shape="poly"
         />
         <area
-          alt="work"
-          onClick={() => {
-            allFalse();
-            setWork(true);
-          }}
-          title="Work Experience"
-          href="#workExperience"
-          coords="151,504,1,601,1,851,35,883,230,754,222,721,230,693,244,680,258,670,272,664,291,658,307,658,323,658"
-          shape="poly"
-        />
-        <area
           alt="watch"
           onClick={() => {
             allFalse();
@@ -176,20 +171,32 @@ function App() {
         />
         <area
           alt="tablet"
-          title="Tablet"
+          onClick={() => {
+            allFalse();
+            setMouse(true);
+          }}
+          title="More Projects TBA"
           href="#tablet"
           coords="481,959,518,774,526,760,820,788,828,799,804,959"
           shape="poly"
         />
         <area
           alt="phone"
-          title="Phone"
+          onClick={() => {
+            allFalse();
+            setTrackpad(true);
+          }}
+          title="More Projects TBA"
           href="#phone"
           coords="1887,379,1848,314,1724,355,1832,537,1887,519"
           shape="poly"
         />
         <area
           alt="pencilTopRight"
+          onClick={() => {
+            allFalse();
+            setPencil(true);
+          }}
           title="Contact Me"
           href="#pencil"
           coords="1889,57,1738,75,1720,81,1741,89,1889,73"
@@ -197,6 +204,10 @@ function App() {
         />
         <area
           alt="pencilBelowTopRight"
+          onClick={() => {
+            allFalse();
+            setPencil(true);
+          }}
           title="Contact Me"
           href="#pencil"
           coords="1887,115,1714,168,1702,178,1722,182,1889,133"
@@ -204,6 +215,10 @@ function App() {
         />
         <area
           alt="pencilBottomLeft"
+          onClick={() => {
+            allFalse();
+            setPencil(true);
+          }}
           title="Contact Me"
           href="#pencil"
           coords="3,503,185,526,203,536,185,542,-1,518"
@@ -220,11 +235,23 @@ function App() {
           coords="1342,717,1353,717,1362,725,1362,740,1357,755,1350,772,1340,782,1330,790,1315,799,1300,807,1290,819,1290,835,1303,842,1318,844,1328,837,1333,824,1342,812,1357,802,1377,799,1394,802,1405,805,1420,814,1432,819,1440,829,1447,839,1447,854,1434,862,1417,860,1390,854,1394,830,1422,805,1437,799,1454,795,1474,799,1497,807,1510,820,1510,835,1505,852,1494,862,1484,869,1470,874,1454,875,1437,875,1422,875,1407,875,1390,872,1374,874,1353,877,1337,892,1320,902,1302,919,1290,941,1290,956,1394,959,1400,946,1397,912,1338,872,1315,864,1295,862,1277,865,1257,875,1237,894,1237,919,1257,939,1275,946,1407,921,1424,919,1447,919,1469,932,1490,946,1519,954,1546,949,1561,937,1567,926,1561,909,1547,892,1532,885,1338,732,1360,751,1377,802,1374,817,1360,832,1345,839,1307,814,1313,789,1322,752,1303,739,1288,742,1265,722,1287,708,1317,737"
           shape="poly"
         />
+        <area
+          alt="work"
+          onMouseEnter={() => setWorkDescription(true)}
+          onMouseLeave={() => setWorkDescription(false)}
+          onClick={() => {
+            allFalse();
+            setWork(true);
+          }}
+          href="#workExperience"
+          coords="151,504,1,601,1,851,35,883,230,754,222,721,230,693,244,680,258,670,272,664,291,658,307,658,323,658"
+          shape="poly"
+        />
       </map>
       {start && (
         <div>
-          <div className="Name">Owen Post</div>
-          <div className="Text">
+          <div className="InterestsName">Owen Post</div>
+          <div className="InterestsDescription">
             Welcome to my desk! Feel free to look around as its a little messy
             around here.
           </div>
@@ -243,6 +270,12 @@ function App() {
       {work && <WorkExperience />}
       {watch && <WhereImAt />}
       {earbuds && <Interests/>}
+      {pencil && <ContactMe/>}
+      {workDescription && (
+        <div className="popup">
+          Work Experience
+        </div>
+      )}
     </div>
   );
 }

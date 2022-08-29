@@ -188,3 +188,65 @@ INTERESTS PAGE
   cursor: pointer;
   filter: hue-rotate(230deg) brightness(80%);
 }
+
+/*
+Contact Page
+*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  font-family: 'Secular One'; 
+  font-size: calc(10px + 2vmin);
+  color: white;
+  left: 40%;
+  top:  23%;
+}
+
+input {
+  padding:10px;
+  border-radius:10px;
+  margin: 1%;
+  box-shadow:0 0 8px 4px rgb(62,62,62);
+  font-family: 'Secular One'; 
+  font-size: calc(2px + 2vmin);
+}
+
+textarea {
+  margin: 1%;
+  padding:10px;
+  border-radius:10px;
+  box-shadow:0 0 8px 4px rgb(62,62,62);
+  font-family: 'Secular One'; 
+  font-size: calc(2px + 2vmin);
+}
+
+button {
+  appearance:none;
+  -webkit-appearance:none;
+  padding:10px;
+  border:none;
+  background-color:rgb(62,62,62);
+  color:#fff;
+  font-weight:600;
+  border-radius:5px;
+  width:30%;
+}
+
+button:hover {
+  cursor: pointer;
+  color:rgb(204,204,204);
+}
+
+.Contact {
+  position: absolute;
+  font-family:'Secular One';
+  font-size: calc(30px + 2vmin);
+  text-shadow: 4px 4px 5px rgb(255, 255, 255);
+  letter-spacing: 10px;
+  color:rgb(62,62,62);
+  left: 17%;
+  top:  40%;
+}
