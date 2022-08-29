@@ -108,16 +108,7 @@ WHERE IM AT RIGHT NOW
   font-size: calc(10px + 2vmin);
   color: white;
   left: 30%;
-  top:  38%;
-}
-
-.Time-Desc {
-  position: absolute;
-  font-family: 'Secular One'; 
-  font-size: calc(10px + 2vmin);
-  color: white;
-  left: 53.3%;
-  top:  38%;
+  top:  37%;
 }
 
 .After-Desc {
@@ -126,6 +117,74 @@ WHERE IM AT RIGHT NOW
   font-size: calc(10px + 2vmin);
   color: white;
   left: 30%;
-  top:  45%;
+  top:  43%;
   right: 30%;
+}
+
+/*
+INTERESTS PAGE
+*/
+
+.InterestsDescription {
+  position: absolute;
+  font-family: 'Secular One'; 
+  font-size: calc(10px + 2vmin);
+  color: white;
+  left: 30%;
+  top:  37%;
+  right: 28%;
+}
+
+.InterestsName {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family:'Secular One';
+  font-size: calc(30px + 2vmin);
+  text-shadow: 4px 4px 5px rgb(255, 255, 255);
+  letter-spacing: 10px;
+  color:rgb(62,62,62);
+  left: 30%;
+  top:  30%;
+}
+
+.mal {
+  width: 7%;
+  height: auto;
+  position: absolute;
+  left: 45%;
+  top:  60%;
+}
+
+.mal:hover {
+  cursor: pointer;
+  filter: hue-rotate(230deg) brightness(80%);
+}
+
+.letterboxd {
+  width: 6%;
+  height: auto;
+  position: absolute;
+  left: 30%;
+  top:  58%;
+}
+
+.letterboxd:hover {
+  cursor: pointer;
+  filter: hue-rotate(230deg) brightness(80%);
+}
+
+.goodreads {
+  width: 6%;
+  height: auto;
+  position: absolute;
+  left: 60%;
+  top:  58%;
+}
+
+.goodreads:hover {
+  cursor: pointer;
+  filter: hue-rotate(230deg) brightness(80%);
 }
