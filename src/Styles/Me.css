@@ -250,3 +250,14 @@ button:hover {
   left: 17%;
   top:  40%;
 }
+
+.PhoneNumber {
+  position: absolute;
+  font-family:'Secular One';
+  font-size: calc(20px + 2vmin);
+  text-shadow: 4px 4px 5px rgb(255, 255, 255);
+  letter-spacing: 10px;
+  color:rgb(62,62,62);
+  left: 39%;
+  top: 60%;
+}

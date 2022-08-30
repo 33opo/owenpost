@@ -173,7 +173,7 @@ function App() {
             allFalse();
             setStart(true);
             window.open(
-              "https://firebasestorage.googleapis.com/v0/b/resume-693b0.appspot.com/o/OwenPostResume%20(1).pdf?alt=media&token=b9c448c8-18cb-4f79-b436-491555707b80",
+              "https://firebasestorage.googleapis.com/v0/b/resume-693b0.appspot.com/o/Resume1.pdf?alt=media&token=9ec386eb-0b30-47ff-84a1-ff8c1ada7937",
               "_blank"
             );
           }}

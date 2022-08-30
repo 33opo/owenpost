@@ -30,10 +30,11 @@ function App() {
         <FontAwesomeIcon
           icon={faEnvelope}
           onClick={() =>
-            window.open("", "_blank")
+            window.open("mailto:olp1@sfu.ca", "_blank")
           }
         />
       </div>
+      <div className="PhoneNumber">+1 604 - 786 - 0776</div>
     </div>
   );
 }
