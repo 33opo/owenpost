@@ -9,11 +9,22 @@ import WorkExperience from "./Components/WorkExperience";
 import WhereImAt from "./Components/WhereImAt";
 import Interests from "./Components/Interests";
 import ContactMe from "./Components/ContactMe";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {Popups} from "./Helpers/Popups"
+import Learning from "./Components/Learning";
+import { Popups } from "./Helpers/Popups";
 
 function App() {
+  const [mouse, setMouse] = React.useState(false);
+  const [coffee, setCoffee] = React.useState(false);
+  const [trackpad, setTrackpad] = React.useState(false);
+  const [glasses, setGlasses] = React.useState(false);
+  const [work, setWork] = React.useState(false);
+  const [watch, setWatch] = React.useState(false);
+  const [earbuds, setEarbuds] = React.useState(false);
+  const [pencil, setPencil] = React.useState(false);
+  const [magnifyingGlass, setMagnifyingGlass] = React.useState(false);
+  const [start, setStart] = React.useState(true);
+
+  // Function not mine, found on Stackoverflow
   window.onload = function () {
     var ImageMap = function (map, img) {
         var n,
@@ -21,10 +32,6 @@ function App() {
           len = areas.length,
           coords = [],
           previousWidth = 1888;
-        //1890 for smaller screen
-        //1920 - 30 = 2048 - 160
-        //
-        //2048 large 1920 small = 128
         for (n = 0; n < len; n++) {
           coords[n] = areas[n].coords.split(",");
         }
@@ -53,18 +60,6 @@ function App() {
     return;
   };
 
-  const [mouse, setMouse] = React.useState(false);
-  const [coffee, setCoffee] = React.useState(false);
-  const [trackpad, setTrackpad] = React.useState(false);
-  const [glasses, setGlasses] = React.useState(false);
-  const [work, setWork] = React.useState(false);
-  const [watch, setWatch] = React.useState(false);
-  const [earbuds, setEarbuds] = React.useState(false);
-  const [pencil, setPencil] = React.useState(false);
-  const [magnifyingGlass, setMagnifyingGlass] = React.useState(false);
-  const [start, setStart] = React.useState(true);
-
-  //console.log(window.innerWidth);
   const allFalse = () => {
     setMouse(false);
     setCoffee(false);
@@ -303,29 +298,24 @@ function App() {
         />
       </map>
       {start && (
-        <div>
-          <div className="InterestsName">Owen Post</div>
-          <div className="InterestsDescription">
+        <div className="start">
+          <div className="name">Owen Post</div>
+          <div className="description">
             Welcome to my desk! Feel free to look around as its a little messy
             around here.
           </div>
         </div>
       )}
-      {coffee && (
-        <div className="Text">
-          Coffee
-          <FontAwesomeIcon icon={faCoffee} />
-        </div>
-      )}
+      {coffee && <Learning />}
       {mouse && <Notable />}
       {trackpad && <Database />}
       {glasses && <AboutMe />}
       {magnifyingGlass && <WhereToFindMe />}
       {work && <WorkExperience />}
       {watch && <WhereImAt />}
-      {earbuds && <Interests/>}
-      {pencil && <ContactMe/>}
-      <Popups/>
+      {earbuds && <Interests />}
+      {pencil && <ContactMe />}
+      <Popups />
     </div>
   );
 }

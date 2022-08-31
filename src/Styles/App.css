@@ -46,14 +46,11 @@ div, html, body {
   right: 20%;
 }
 
-/* NOTABLE SECTION
-*/
 .video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   height: 0;
 }
-
 .video-responsive iframe {
   left: 17%;
   top: 34%;
@@ -62,64 +59,58 @@ div, html, body {
   position: absolute;
 }
 
-.Notable {
+.project {
+  text-align: center;
+}
+.project .description {
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: 'Secular One'; 
-  font-size: calc(15px + 2vmin);
+  font-size: calc(3.5vmin);
   color: white;
-  left: 45%;
-  top:  38%;
+  left: 44%;
+  top:  37%;
   right: 20%;
 }
-
-.Notable-Name {
+.project .name {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family:'Secular One';
-  font-size: calc(30px + 2vmin);
+  font-size: calc(6vmin);
   text-shadow: 4px 4px 5px rgb(255, 255, 255);
-  letter-spacing: 10px;
-  color:#4c4e50;
-  left: 42%;
-  top:  30%;
+  letter-spacing: 0.8vmin;
+  color:rgb(62, 62, 62);
+  left: 44%;
+  top:  29%;
   right: 20%;
 }
-
-.Notable-Icon1 {
+.project .icon-1 {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: calc(70px + 2vmin);
+  font-size: calc(9vmin);
   left: 40%;
   top:  68%;
 }
-
-.Notable-Icon1:hover {
+.project .icon-1:hover {
   cursor: pointer;
   color:rgb(204,204,204);
 }
-
-.Notable-Icon2 {
+.project .icon-2 {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: calc(70px + 2vmin);
+  font-size: calc(9vmin);
   left: 55%;
   top:  68%;
 }
-
-.Notable-Icon2:hover {
+.project .icon-2:hover {
   cursor: pointer;
   color:rgb(204,204,204);
 }
@@ -138,7 +129,6 @@ div, html, body {
   opacity: 1;
   transition: opacity 0.4s linear;
 }
-
 .hide {
   position: absolute;
   font-family: 'Secular One'; 
@@ -152,4 +142,52 @@ div, html, body {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 0.4s, opacity 0.4s linear;
+}
+
+.learning {
+  text-align: center;
+}
+.learning .name {
+  position: absolute;
+  font-family: "Secular One";
+  font-size: calc(7vmin);
+  text-shadow: 4px 4px 5px rgb(255, 255, 255);
+  letter-spacing: 0.8vmin;
+  color: rgb(62, 62, 62);
+  left: 30%;
+  right: 28%;
+  top: 26%;
+}
+.learning .description {
+  position: absolute;
+  font-family: "Secular One";
+  font-size: calc(4vmin);
+  color: white;
+  left: 29%;
+  top: 35%;
+  right: 27%;
+}
+
+.start {
+  text-align: center;
+}
+.start .name {
+  position: absolute;
+  font-family: "Secular One";
+  font-size: calc(7vmin);
+  text-shadow: 4px 4px 5px rgb(255, 255, 255);
+  letter-spacing: 0.8vmin;
+  color: rgb(62, 62, 62);
+  left: 30%;
+  right: 28%;
+  top: 26%;
+}
+.start .description {
+  position: absolute;
+  font-family: "Secular One";
+  font-size: calc(4vmin);
+  color: white;
+  left: 29%;
+  top: 35%;
+  right: 27%;
 }

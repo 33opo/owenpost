@@ -1,263 +1,248 @@
-.Description {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Secular One'; 
-    font-size: calc(10px + 2vmin);
-    color: white;
-    left: 50%;
-    top:  38%;
-    right: 18%;
-  }
+.about-me {
+  text-align: center;
+}
+.about-me .description {
+  position: absolute;
+  font-family: "Secular One";
+  font-size: calc(3.5vmin);
+  color: white;
+  left: 48%;
+  top: 38%;
+  right: 20%;
+}
+.about-me .name {
+  position: absolute;
+  font-family: "Secular One";
+  font-size: calc(6vmin);
+  text-shadow: 4px 4px 5px rgb(255, 255, 255);
+  letter-spacing: 0.6vmin;
+  color: rgb(62, 62, 62);
+  left: 48%;
+  top: 30%;
+  right: 20%;
+}
+.about-me .picture {
+  position: absolute;
+  outline: 5px solid rgb(62, 62, 62);
+  left: 30%;
+  top: 30%;
+  width: 17%;
+  height: auto;
+}
 
-.Name {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family:'Secular One';
-    font-size: calc(30px + 2vmin);
-    text-shadow: 4px 4px 5px rgb(255, 255, 255);
-    letter-spacing: 10px;
-    color:rgb(62,62,62);
-    left: 42%;
-    top:  30%;
-    right: 20%;
-  }
-
-.Picture {
-    position: absolute;
-    outline: 5px solid rgb(62,62,62);
-    left: 30%;
-    top:  30%;
-    width: 17%;
-     height: auto;
-  }
-  
-  .Icon1 {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: calc(100px + 2vmin);
-    left: 34%;
-    top:  45%;
-  }
-  
-  .Icon1:hover {
-    cursor: pointer;
-    color:rgb(204,204,204);
-  }
-  
-  .Icon2 {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: calc(100px + 2vmin);
-    left: 50%;
-    top:  45%;
-  }
-  
-  .Icon2:hover {
-    cursor: pointer;
-    color:rgb(204,204,204);
-  }
-
-.Icon3 {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: calc(100px + 2vmin);
-    left: 66%;
-    top:  45%;
-  }
-  
-.Icon3:hover {
-    cursor: pointer;
-    color:rgb(204,204,204);
-  }
-/*
-WHERE IM AT RIGHT NOW
-*/
-.Title {
+.find {
+  text-align: center;
+}
+.find .icon-1 {
   position: absolute;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family:'Secular One';
-  font-size: calc(30px + 2vmin);
+  color: white;
+  font-size: calc(13vmin);
+  left: 34%;
+  top: 45%;
+}
+.find .icon-1:hover {
+  cursor: pointer;
+  color: rgb(204, 204, 204);
+}
+.find .icon-2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: calc(13vmin);
+  left: 50%;
+  top: 45%;
+}
+.find .icon-2:hover {
+  cursor: pointer;
+  color: rgb(204, 204, 204);
+}
+.find .icon-3 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: calc(13vmin);
+  left: 66%;
+  top: 45%;
+}
+.find .icon-3:hover {
+  cursor: pointer;
+  color: rgb(204, 204, 204);
+}
+.find .PhoneNumber {
+  position: absolute;
+  font-family: "Secular One";
+  font-size: calc(4vmin);
   text-shadow: 4px 4px 5px rgb(255, 255, 255);
-  letter-spacing: 10px;
-  color:rgb(62,62,62);
-  left: 30%;
-  top:  30%;
+  letter-spacing: 1vmin;
+  color: rgb(62, 62, 62);
+  left: 39%;
+  top: 60%;
 }
 
-.Time {
+.where-at {
+  text-align: center;
+}
+.where-at .name {
   position: absolute;
-  font-family: 'Secular One'; 
-  font-size: calc(10px + 2vmin);
+  font-family: "Secular One";
+  font-size: calc(7vmin);
+  text-shadow: 4px 4px 5px rgb(255, 255, 255);
+  letter-spacing: 0.8vmin;
+  color: rgb(62, 62, 62);
+  left: 25%;
+  right: 25%;
+  top: 26%;
+}
+.where-at .description {
+  position: absolute;
+  font-family: "Secular One";
+  font-size: calc(4vmin);
   color: white;
-  left: 30%;
-  top:  37%;
+  left: 25%;
+  right: 25%;
+  top: 37%;
 }
 
-.After-Desc {
-  position: absolute;
-  font-family: 'Secular One'; 
-  font-size: calc(10px + 2vmin);
-  color: white;
-  left: 30%;
-  top:  43%;
-  right: 30%;
+.interests {
+  text-align: center;
 }
-
-/*
-INTERESTS PAGE
-*/
-
-.InterestsDescription {
+.interests .name {
   position: absolute;
-  font-family: 'Secular One'; 
-  font-size: calc(10px + 2vmin);
+  font-family: "Secular One";
+  font-size: calc(7vmin);
+  text-shadow: 4px 4px 5px rgb(255, 255, 255);
+  letter-spacing: 0.8vmin;
+  color: rgb(62, 62, 62);
+  left: 30%;
+  right: 28%;
+  top: 26%;
+}
+.interests .description {
+  position: absolute;
+  font-family: "Secular One";
+  font-size: calc(4vmin);
   color: white;
   left: 30%;
-  top:  37%;
+  top: 35%;
   right: 28%;
 }
-
-.InterestsName {
+.interests .letterboxd {
+  width: 6%;
+  height: auto;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family:'Secular One';
-  font-size: calc(30px + 2vmin);
-  text-shadow: 4px 4px 5px rgb(255, 255, 255);
-  letter-spacing: 10px;
-  color:rgb(62,62,62);
   left: 30%;
-  top:  30%;
+  top: 58%;
 }
-
-.mal {
+.interests .letterboxd:hover {
+  cursor: pointer;
+  filter: hue-rotate(230deg) brightness(80%);
+}
+.interests .mal {
   width: 7%;
   height: auto;
   position: absolute;
-  left: 45%;
-  top:  60%;
+  left: 48%;
+  top: 60%;
 }
-
-.mal:hover {
+.interests .mal:hover {
+  cursor: pointer;
+  filter: hue-rotate(230deg) brightness(80%);
+}
+.interests .goodreads {
+  width: 6%;
+  height: auto;
+  position: absolute;
+  left: 66%;
+  top: 58%;
+}
+.interests .goodreads:hover {
   cursor: pointer;
   filter: hue-rotate(230deg) brightness(80%);
 }
 
-.letterboxd {
-  width: 6%;
-  height: auto;
+.work {
+  text-align: center;
+}
+.work .name {
   position: absolute;
+  font-family: "Secular One";
+  font-size: calc(7vmin);
+  text-shadow: 4px 4px 5px rgb(255, 255, 255);
+  letter-spacing: 0.8vmin;
+  color: rgb(62, 62, 62);
   left: 30%;
-  top:  58%;
+  right: 28%;
+  top: 26%;
 }
-
-.letterboxd:hover {
-  cursor: pointer;
-  filter: hue-rotate(230deg) brightness(80%);
-}
-
-.goodreads {
-  width: 6%;
-  height: auto;
+.work .description {
   position: absolute;
-  left: 60%;
-  top:  58%;
+  font-family: "Secular One";
+  font-size: calc(4vmin);
+  color: white;
+  left: 30%;
+  top: 35%;
+  right: 28%;
 }
 
-.goodreads:hover {
-  cursor: pointer;
-  filter: hue-rotate(230deg) brightness(80%);
+.contact {
+  text-align: center;
 }
-
-/*
-Contact Page
-*/
-
-.form {
+.contact .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  font-family: 'Secular One'; 
+  font-family: "Secular One";
   font-size: calc(10px + 2vmin);
   color: white;
   left: 40%;
-  top:  23%;
+  top: 23%;
 }
-
-input {
-  padding:10px;
-  border-radius:10px;
+.contact input {
+  padding: 10px;
+  border-radius: 10px;
   margin: 1%;
-  box-shadow:0 0 8px 4px rgb(62,62,62);
-  font-family: 'Secular One'; 
+  box-shadow: 0 0 8px 4px rgb(62, 62, 62);
+  font-family: "Secular One";
   font-size: calc(2px + 2vmin);
 }
-
-textarea {
+.contact textarea {
   margin: 1%;
-  padding:10px;
-  border-radius:10px;
-  box-shadow:0 0 8px 4px rgb(62,62,62);
-  font-family: 'Secular One'; 
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 4px rgb(62, 62, 62);
+  font-family: "Secular One";
   font-size: calc(2px + 2vmin);
 }
-
-button {
-  appearance:none;
-  -webkit-appearance:none;
-  padding:10px;
-  border:none;
-  background-color:rgb(62,62,62);
-  color:#fff;
-  font-weight:600;
-  border-radius:5px;
-  width:30%;
+.contact button {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 10px;
+  border: none;
+  background-color: rgb(62, 62, 62);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 30%;
 }
-
-button:hover {
+.contact button:hover {
   cursor: pointer;
-  color:rgb(204,204,204);
+  color: rgb(204, 204, 204);
 }
-
-.Contact {
+.contact .name {
   position: absolute;
-  font-family:'Secular One';
+  font-family: "Secular One";
   font-size: calc(30px + 2vmin);
   text-shadow: 4px 4px 5px rgb(255, 255, 255);
   letter-spacing: 10px;
-  color:rgb(62,62,62);
+  color: rgb(62, 62, 62);
   left: 17%;
-  top:  40%;
-}
-
-.PhoneNumber {
-  position: absolute;
-  font-family:'Secular One';
-  font-size: calc(20px + 2vmin);
-  text-shadow: 4px 4px 5px rgb(255, 255, 255);
-  letter-spacing: 10px;
-  color:rgb(62,62,62);
-  left: 39%;
-  top: 60%;
+  top: 40%;
 }

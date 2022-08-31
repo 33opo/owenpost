@@ -7,19 +7,20 @@ import { Video } from "../Helpers/Video.js";
 
 function App() {
   return (
-    <div>
-      <div className="Notable-Name">Database System</div>
-      <div className="Notable">
-        This application is much less about the UI and more about the database
-        it is representing!
+    <div className="project">
+      <div className="name">Database System</div>
+      <div className="description">
+        This web application supports a complex database through Thymeleaf and
+        makes calls to the database through a REST API. On the application you can add, 
+        view, delete and many different objects along with other features
       </div>
       <Icon
-        className="Notable-Icon1"
+        className="icon-1"
         icon={faBookOpen}
         url="https://cmpt345project.herokuapp.com/"
       />
       <Icon
-        className="Notable-Icon2"
+        className="icon-2"
         icon={faGithub}
         url="https://github.com/jshggagnier/CMPT345Project"
       />

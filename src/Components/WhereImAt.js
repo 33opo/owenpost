@@ -13,15 +13,14 @@ function App() {
   }
 
   return (
-    <div>
-      <div className="Title">Where I'm at Right Now</div>
-      <div className="Time">seeing as its {formatTime}, I'm probably
+    <div className="where-at">
+      <div className="name">Where I'm at Right Now</div>
+      <div className="description">seeing as its {formatTime}, I'm probably
       {time < 8 && (" sleeping")}
       {time >= 8 && time < 18 && (" doing some coding!")}
       {time >= 18 && (" watching a movie or reading!")}
-      </div>
-      <div className="After-Desc">
-        But besides that, I am currently Searching for Co-op opportunities during this 2022 fall semester!
+      <br/>
+      But besides that, I am currently Searching for Co-op opportunities during this 2022 fall semester!
       </div>
     </div>
   );

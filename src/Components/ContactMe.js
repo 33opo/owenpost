@@ -25,8 +25,8 @@ function App() {
   };
 
   return (
-    <div>
-      <div className="Contact">Contact Me!</div>
+    <div className="contact">
+      <div className="name">Contact Me!</div>
       <form className="form" onSubmit={sendEmail} ref={form}>
         <input type="text" placeholder="Full Name" name="user_name" required />
         <input type="email" placeholder="Email" name="user_email" required />
