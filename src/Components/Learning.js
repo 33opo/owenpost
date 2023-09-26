@@ -8,13 +8,13 @@ function App() {
       <div className="description">
         Some stuff im working on: 
         <br/>
-            - MyAnimeList API web application
+            - My Fall classes 
         <br/>
             - This site
         <br/>
         Some stuff im learning or planning to learn:
         <br/>
-            - Python
+            - Haskell and Rust
         <br/>
             - Adapting this site to mobile
       </div>

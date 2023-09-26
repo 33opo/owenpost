@@ -3,7 +3,6 @@ import React from "react";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Icon } from "../Helpers/Icon.js";
-import { Video } from "../Helpers/Video.js";
 
 function App() {
   return (
@@ -24,7 +23,12 @@ function App() {
         icon={faGithub}
         url="https://github.com/jshggagnier/CMPT345Project"
       />
-      <Video url="https://www.youtube.com/embed/W93XyXHI8Nw" />
+      <img
+          className="picture"
+          src={require("../Styles/database.jpg")}
+          title="image"
+          alt="database"
+        />
     </div>
   );
 }

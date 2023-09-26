@@ -1,8 +1,10 @@
 import "./Styles/App.css";
 import "./Styles/Me.css";
-import React from "react";
+import React, {useEffect} from "react";
 import Notable from "./Components/Notable";
 import Database from "./Components/Database";
+import WorkPorjectTests from "./Components/WorkProjectTests";
+import WorkPorjectAWS from "./Components/WorkProjectAWS";
 import AboutMe from "./Components/AboutMe";
 import WhereToFindMe from "./Components/WhereToFindMe";
 import WorkExperience from "./Components/WorkExperience";
@@ -10,6 +12,7 @@ import WhereImAt from "./Components/WhereImAt";
 import Interests from "./Components/Interests";
 import ContactMe from "./Components/ContactMe";
 import Learning from "./Components/Learning";
+import PopupWarning from "./Components/Warning";
 import { Popups } from "./Helpers/Popups";
 
 function App() {
@@ -23,6 +26,24 @@ function App() {
   const [pencil, setPencil] = React.useState(false);
   const [magnifyingGlass, setMagnifyingGlass] = React.useState(false);
   const [start, setStart] = React.useState(true);
+  const [warning, setWarning] = React.useState(false);
+  const [workPorjectTests, setWorkProjectTests] = React.useState(false);
+  const [workPorjectAWS, setWorkProjectAWS] = React.useState(false);
+
+  const minWidth = 1000;
+
+
+  useEffect(() => {
+    function checkWindowSize() {
+    if (window.innerWidth < minWidth) {
+      setWarning(true);
+    } else {
+      setWarning(false);
+    }
+    }
+      window.addEventListener('resize', checkWindowSize);
+  }, []);
+
 
   // Function not mine, found on Stackoverflow
   window.onload = function () {
@@ -71,10 +92,12 @@ function App() {
     setWatch(false);
     setEarbuds(false);
     setPencil(false);
+    setWorkProjectTests(false);
+    setWorkProjectAWS(false);
   };
 
   return (
-    <div className="back">
+    <div className="background-container">
       <img
         id="img_ID"
         src={require("./Styles/sizedDesk.jpg")}
@@ -169,7 +192,7 @@ function App() {
             allFalse();
             setStart(true);
             window.open(
-              "https://firebasestorage.googleapis.com/v0/b/resume-693b0.appspot.com/o/Resume1.pdf?alt=media&token=f2f02f09-a32b-49a6-9710-a16d1d95852b",
+              "https://firebasestorage.googleapis.com/v0/b/resume-693b0.appspot.com/o/Owen_Post_Resume_One_Page__NEW_2023_09_04_.pdf?alt=media&token=ac6b3189-d6d0-495b-8da2-be9c73232fb8",
               "_blank"
             );
           }}
@@ -201,7 +224,7 @@ function App() {
           }}
           onClick={() => {
             allFalse();
-            setMouse(true);
+            setWorkProjectTests(true);
           }}
           coords="481,959,518,774,526,760,820,788,828,799,804,959"
           shape="poly"
@@ -216,7 +239,7 @@ function App() {
           }}
           onClick={() => {
             allFalse();
-            setTrackpad(true);
+            setWorkProjectAWS(true);
           }}
           coords="1887,379,1848,314,1724,355,1832,537,1887,519"
           shape="poly"
@@ -315,6 +338,9 @@ function App() {
       {watch && <WhereImAt />}
       {earbuds && <Interests />}
       {pencil && <ContactMe />}
+      {warning && <PopupWarning />}
+      {workPorjectTests && <WorkPorjectTests />}
+      {workPorjectAWS && <WorkPorjectAWS />}
       <Popups />
     </div>
   );

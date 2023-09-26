@@ -20,7 +20,7 @@ function App() {
       {time >= 8 && time < 18 && (" doing some coding!")}
       {time >= 18 && (" watching a movie or reading!")}
       <br/>
-      But besides that, I am currently Searching for Co-op opportunities during this 2022 fall semester!
+      But besides that, I am currently Searching for Co-op opportunities during this 2023 summer semester!
       </div>
     </div>
   );

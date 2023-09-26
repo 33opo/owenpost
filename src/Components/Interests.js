@@ -2,7 +2,7 @@ import "../Styles/App.css";
 import React from "react";
 import {PicIcon} from "../Helpers/PicIcon";
 
-function App() {
+function Interests() {
   return (
     <div className="interests">
       <div className="name">Personal Interests</div>
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default Interests;

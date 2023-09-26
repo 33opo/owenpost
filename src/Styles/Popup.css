@@ -1,0 +1,40 @@
+
+.popup-overlay-warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  .popup-warning {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .close-button-warning {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .close-button-warning:hover {
+    color: #555;
+  }
+  

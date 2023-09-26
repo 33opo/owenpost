@@ -9,7 +9,7 @@ export function Popups() {
           Work Experience
         </div>
         <div className="hide" style={{left:"41%", top:"84%"}} id="tabletDesc">
-          Project TBA
+          AdvisorFlow Testing Suite
         </div>
         <div className="hide" style={{left:"18%", top:"68%"}} id="find">
           Where to Find Me
@@ -36,7 +36,7 @@ export function Popups() {
           Contact Me
         </div>
         <div className="hide" style={{left:"87%", top:"44%"}} id="phoneDesc">
-          Project TBA
+          AdvisorFlow AWS Lambda
         </div>
         <div className="hide" style={{left:"82%", top:"70%"}} id="resumeDesc">
           Resume
