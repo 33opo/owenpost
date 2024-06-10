@@ -124,9 +124,9 @@ div, html, body {
 .project .picture {
   position: absolute;
   top: 30%;
-  width: 23%;
+  width: 20%;
   height: auto;
-  margin-left: 20%;
+  margin-left: 24%;
 }
 
 .popup {
@@ -204,4 +204,9 @@ div, html, body {
   left: 29%;
   top: 35%;
   right: 27%;
+}
+
+textarea {
+  overflow:auto;
+  resize:none;
 }

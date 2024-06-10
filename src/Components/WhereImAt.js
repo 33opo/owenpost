@@ -17,10 +17,10 @@ function App() {
       <div className="name">Where I'm at Right Now</div>
       <div className="description">seeing as its {formatTime}, I'm probably
       {time < 8 && (" sleeping")}
-      {time >= 8 && time < 18 && (" doing some coding!")}
-      {time >= 18 && (" watching a movie or reading!")}
+      {time >= 8 && time < 18 && (" doing some coding.")}
+      {time >= 18 && (" watching a movie or playing some games.")}
       <br/>
-      But besides that, I am currently Searching for Co-op opportunities during this 2023 summer semester!
+      But besides that, I am always on the lookout for opportunities to learn about the latest technologies and broaden my knowledge in my field.
       </div>
     </div>
   );

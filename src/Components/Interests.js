@@ -1,4 +1,5 @@
 import "../Styles/App.css";
+import "../Styles/Me.css";
 import React from "react";
 import {PicIcon} from "../Helpers/PicIcon";
 
@@ -9,8 +10,8 @@ function Interests() {
       <div className="description">
         I like watching anime, movies, tv shows and reading. Also, I love keeping track of everything on list websites, if you're interested check them out!
       </div>
-      <PicIcon className="mal" url="https://myanimelist.net/profile/33opo33"/>
       <PicIcon className="letterboxd" url="https://letterboxd.com/33opo/"/>
+      <PicIcon className="MAL" url="https://myanimelist.net/profile/33opo33"/>
       <PicIcon className="goodreads" url="https://www.goodreads.com/user/show/142076161-owen-post"/>
     </div>
   );

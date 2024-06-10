@@ -144,14 +144,14 @@
   cursor: pointer;
   filter: hue-rotate(230deg) brightness(80%);
 }
-.interests .mal {
+.interests .MAL {
   width: 7%;
   height: auto;
   position: absolute;
   left: 48%;
   top: 56%;
 }
-.interests .mal:hover {
+.interests .MAL:hover {
   cursor: pointer;
   filter: hue-rotate(230deg) brightness(80%);
 }

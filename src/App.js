@@ -3,8 +3,8 @@ import "./Styles/Me.css";
 import React, {useEffect} from "react";
 import Notable from "./Components/Notable";
 import Database from "./Components/Database";
-import WorkPorjectTests from "./Components/WorkProjectTests";
-import WorkPorjectAWS from "./Components/WorkProjectAWS";
+import KnowledgeNest from "./Components/KnowledgeNest";
+import GateKeeper from "./Components/GateKeeper";
 import AboutMe from "./Components/AboutMe";
 import WhereToFindMe from "./Components/WhereToFindMe";
 import WorkExperience from "./Components/WorkExperience";
@@ -339,8 +339,8 @@ function App() {
       {earbuds && <Interests />}
       {pencil && <ContactMe />}
       {warning && <PopupWarning />}
-      {workPorjectTests && <WorkPorjectTests />}
-      {workPorjectAWS && <WorkPorjectAWS />}
+      {workPorjectTests && <GateKeeper />}
+      {workPorjectAWS && <KnowledgeNest />}
       <Popups />
     </div>
   );

@@ -8,9 +8,9 @@ function App() {
       <div className="description">
         Some stuff im working on: 
         <br/>
-            - My Fall classes 
+            - Work at GateKeeper Systems 
         <br/>
-            - This site
+            - Learning game dev by creating a tower defense in Unity
         <br/>
         Some stuff im learning or planning to learn:
         <br/>

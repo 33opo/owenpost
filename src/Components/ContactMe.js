@@ -1,9 +1,12 @@
 import "../Styles/App.css";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -14,11 +17,12 @@ function App() {
         "WazuDMYOC3S72xfhV"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          toast.success("Email sent successfully!");
         },
         (error) => {
-          console.log(error.text);
+          toast.error("Failed to send email. Please try again.");
+          console.log(error)
         }
       );
     e.target.reset();
@@ -34,6 +38,7 @@ function App() {
         <textarea name="message" cols="30" rows="10" required></textarea>
         <button type="submit">Send Message</button>
       </form>
+      <ToastContainer />
     </div>
   );
 }

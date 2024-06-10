@@ -6,10 +6,10 @@ export function Popups() {
     return (
         <div>
         <div className="hide" style={{left:"2%", top:"84%"}} id="workDesc">
-          Work Experience
+          Work: AdvisorFlow
         </div>
         <div className="hide" style={{left:"41%", top:"84%"}} id="tabletDesc">
-          AdvisorFlow Testing Suite
+          Work: GateKeeper Systems
         </div>
         <div className="hide" style={{left:"18%", top:"68%"}} id="find">
           Where to Find Me
@@ -21,10 +21,10 @@ export function Popups() {
           Where I'm At
         </div>
         <div className="hide" style={{left:"28%", top:"8%"}} id="databaseDesc">
-          Database System
+          Project: Database System
         </div>
         <div className="hide" style={{left:"56%", top:"4%"}} id="notableDesc">
-          Notable
+          Project: Notable
         </div>
         <div className="hide" style={{left:"69%", top:"7%"}} id="meDesc">
           About Me
@@ -36,7 +36,7 @@ export function Popups() {
           Contact Me
         </div>
         <div className="hide" style={{left:"87%", top:"44%"}} id="phoneDesc">
-          AdvisorFlow AWS Lambda
+          Project: KnowledgeNest
         </div>
         <div className="hide" style={{left:"82%", top:"70%"}} id="resumeDesc">
           Resume
